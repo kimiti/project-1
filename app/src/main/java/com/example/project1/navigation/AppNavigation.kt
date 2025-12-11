@@ -26,6 +26,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.project1.R
 import com.example.project1.components.BottomNavigationBar
+import com.example.project1.screens.HomeScreen
 import com.example.project1.screens.IntroScreen
 import com.example.project1.ui.theme.DarkBlue
 
@@ -88,7 +89,9 @@ fun MainAppContainer() {
     ) { paddingValues ->
         Box(modifier = Modifier.padding(paddingValues)) {
             when (selectedTab) {
-                "Home" -> {}
+                "Home" -> {
+                    HomeScreen()
+                }
                 "Wallet" -> {}
                 "Profile" -> {}
                 "Setting" -> {}
